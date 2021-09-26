@@ -29,7 +29,7 @@ const Dia1509 = () => {
 
     Animated.sequence([
       Animated.parallel([
-        Animated.timing(text, { toValue: 1, duration: 1500, delay: 500 }),
+        Animated.timing(text, { toValue: 1, duration: 1500, delay: 500}),
       ]),
     ]).start();
   };

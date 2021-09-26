@@ -18,16 +18,16 @@ const Dia1609 = () => {
 
   const gerarGrafico = () => {
     Animated.sequence([
-      Animated.timing(alturaA, { toValue: 56.72, duration: 1000 }),
-      Animated.timing(alturaB, { toValue: 28.57, duration: 1000 }),
-      Animated.timing(alturaC, { toValue: 76.52, duration: 1000 }),
-      Animated.timing(alturaD, { toValue: 37.76, duration: 1000 }),
-      Animated.timing(alturaE, { toValue: 62.63, duration: 1000 }),
+      Animated.timing(alturaA, { toValue: 56.72, duration: 500 }),
+      Animated.timing(alturaB, { toValue: 28.57, duration: 500 }),
+      Animated.timing(alturaC, { toValue: 76.52, duration: 500 }),
+      Animated.timing(alturaD, { toValue: 37.76, duration: 500 }),
+      Animated.timing(alturaE, { toValue: 62.63, duration: 500 }),
     ]).start();
 
     Animated.sequence([
         Animated.parallel([
-          Animated.timing(text, { toValue: 1, delay: 5200 }),
+          Animated.timing(text, { toValue: 1, delay: 2700 }),
         ]),
       ]).start();
   };
